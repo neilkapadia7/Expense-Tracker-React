@@ -20,10 +20,8 @@ const Home = () => {
     function sum(key) {
         return history.reduce((a, b) => a += (b[key] || 0), 0);
     };
-    
-    let bal = 30000;
 
-
+    let bal = income;
 
     return (
         <div>

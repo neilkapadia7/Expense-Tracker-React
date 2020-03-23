@@ -7,8 +7,6 @@ import axios from 'axios';
 const ExpenseState = props => {
     const initialState = {
         income: 30000,
-        balance: 30000,
-        expense: 0,
         history: [],
         loading: false        
     }
@@ -51,8 +49,6 @@ const ExpenseState = props => {
     return (
         <ExpenseContext.Provider value={{
             income: state.income,
-            balance: state.balance,
-            expense: state.expense,
             history: state.history,
             loading: state.loading,
             addExpense,
